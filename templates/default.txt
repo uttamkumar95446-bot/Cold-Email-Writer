@@ -1,0 +1,13 @@
+Subject: Quick note on the {role} role at {company}
+
+Hi {recipient_name_or_fallback},
+
+{personalization_note}
+
+I'm {candidate_name}, and I've been building projects around {candidate_background}. The {role} role at {company} stood out because it connects closely with my background and interests.
+
+Would you be open to a quick chat about how my experience could contribute to your team?
+
+Best,
+{candidate_name}
+{portfolio_or_linkedin}

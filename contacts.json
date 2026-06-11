@@ -1,0 +1,53 @@
+[
+  {
+    "recipient_email": "alice@techcorp.com",
+    "recipient_name": "Alice Wang",
+    "company": "TechCorp",
+    "role": "Software Engineering Intern",
+    "job_url": "https://techcorp.com/careers/swe-intern",
+    "personalization_note": "I was impressed by TechCorp's open-source contributions to the React ecosystem.",
+    "candidate_name": "Your Name",
+    "candidate_background": "Full-stack developer with React and Python experience",
+    "portfolio_url": "https://github.com/yourname"
+  },
+  {
+    "recipient_email": "bob@healthai.io",
+    "recipient_name": "Bob Chen",
+    "company": "HealthAI",
+    "role": "ML Research Intern",
+    "personalization_note": "HealthAI's work on medical image segmentation is exactly the kind of impactful ML I want to work on.",
+    "candidate_name": "Your Name",
+    "candidate_background": "ML engineer with projects in computer vision and healthcare",
+    "linkedin_url": "https://linkedin.com/in/yourname"
+  },
+  {
+    "recipient_email": "carol@finstartup.com",
+    "recipient_name": "Carol Martinez",
+    "company": "FinStartup",
+    "role": "Backend Intern",
+    "personalization_note": "I've been following FinStartup's growth -- your API-first approach to personal finance is innovative.",
+    "candidate_name": "Your Name",
+    "candidate_background": "Backend developer with experience in Python, PostgreSQL, and distributed systems",
+    "portfolio_url": "https://github.com/yourname"
+  },
+  {
+    "recipient_email": "dave@greentech.org",
+    "recipient_name": "Dave Park",
+    "company": "GreenTech",
+    "role": "Data Engineering Intern",
+    "personalization_note": "GreenTech's mission to use data for environmental monitoring really aligns with my values.",
+    "candidate_name": "Your Name",
+    "candidate_background": "Data engineer skilled in ETL pipelines, SQL, and data visualization",
+    "portfolio_url": "https://github.com/yourname"
+  },
+  {
+    "recipient_email": "eva@sociapp.com",
+    "recipient_name": "Eva Thompson",
+    "company": "Sociapp",
+    "role": "Product Management Intern",
+    "personalization_note": "I love Sociapp's focus on community-driven features -- your recent launch is inspiring.",
+    "candidate_name": "Your Name",
+    "candidate_background": "CS student with product thinking and experience building user-facing features",
+    "linkedin_url": "https://linkedin.com/in/yourname"
+  }
+]
