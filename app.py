@@ -51,8 +51,7 @@ def init_session_state():
         "config_loaded": False,
         "app_config": None,
         "uploaded_file_content": None,
-        "data_source": "demo",
-        "log_refresh_counter": 0,
+        "data_source": "demo",        "log_refresh_counter": 0,
     }
     for key, value in defaults.items():
         if key not in st.session_state:
@@ -113,15 +112,8 @@ def render_email_preview(email: EmailModel, contact: Contact):
 
 
 def get_config_from_sidebar() -> Optional[Config]:
-    """Load config from .env with sidebar overrides."""
+    """Load config from .env file (silently — no SMTP fields shown on the dashboard)."""
     config = load_config()
-
-    with st.sidebar.expander("SMTP Configuration", expanded=False):
-        config.smtp_host = st.text_input("SMTP Host", value=config.smtp_host)
-        config.smtp_port = st.number_input("SMTP Port", value=config.smtp_port, min_value=1, max_value=65535)
-        config.smtp_user = st.text_input("SMTP Username", value=config.smtp_user, placeholder="your@gmail.com")
-        config.smtp_password = st.text_input("SMTP Password", type="password", value=config.smtp_password, placeholder="App password")
-        config.sender_name = st.text_input("Sender Name", value=config.sender_name, placeholder="Your Name")
 
     config.dry_run = st.sidebar.checkbox("Dry Run (log only, no sending)", value=config.dry_run)
 
@@ -323,7 +315,7 @@ else:
         st.subheader("Email Processing Pipeline")
 
         if not st.session_state.config_loaded:
-            st.warning("Configure SMTP settings in the sidebar before processing.")
+            st.warning("SMTP configuration is incomplete. Check your .env file and ensure SMTP credentials are set.")
         else:
             config = st.session_state.app_config
             contacts = st.session_state.contacts
